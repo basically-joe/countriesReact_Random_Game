@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import FlagDisplay from '../components/FlagDisplay';
 
 class MainContainer extends Component {
     constructor(props) {
@@ -18,7 +19,9 @@ componentDidMount(){
 
 
     render() { 
-        return ( <h1>I'm the main container!</h1> );
+        return(
+            <FlagDisplay flags= {this.state.countries}/>
+        )
     }
 }
  
