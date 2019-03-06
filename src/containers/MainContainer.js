@@ -7,6 +7,7 @@ class MainContainer extends Component {
         super(props);
         this.state = { 
             countries: []
+
          }
     }
 
@@ -17,11 +18,16 @@ componentDidMount(){
     .then(data => this.setState({countries: data}))
 }
 
+handleCountryNameSelection(){
+
+}
+
 
     render() { 
         return(
             <div className="main-display">
             <FlagDisplay flags= {this.state.countries}/>
+
             {/* <CountrySelector names= {this.state.countries}/> */}
             </div>
         )
