@@ -1,10 +1,14 @@
 import React from 'react';
 
 const FlagDisplay = (props) => {
+    
     const flagData = props.flags;
+    if (flagData.length === 0) return null;
     return ( 
-        console.log(flagData),
-        null
+
+        <img src={flagData[0].flag} alt="country-name"></img>
+        // console.log(flagData[0].name),
+        //  null
      );
 }
  

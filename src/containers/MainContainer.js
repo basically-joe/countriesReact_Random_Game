@@ -17,7 +17,6 @@ componentDidMount(){
 }
 
 
-
     render() { 
         return(
             <FlagDisplay flags= {this.state.countries}/>
