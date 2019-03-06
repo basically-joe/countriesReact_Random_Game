@@ -22,7 +22,7 @@ componentDidMount(){
         return(
             <div className="main-display">
             <FlagDisplay flags= {this.state.countries}/>
-            <CountrySelector names= {this.state.countries}/>
+            {/* <CountrySelector names= {this.state.countries}/> */}
             </div>
         )
     }
